@@ -28,6 +28,8 @@
 
 #if ANDROID_MAJOR == 5 && ANDROID_MINOR == 1
 #include "services/audioflinger_5_1_0.h"
+#elif ANDROID_MAJOR == 4 && ANDROID_MINOR == 4
+#include "services/audioflinger_4_4_0.h"
 #else
 #error Unsupported Android version.
 #endif

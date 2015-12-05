@@ -35,8 +35,7 @@ LOCAL_SHARED_LIBRARIES := libc \
                           libutils \
                           libcutils \
                           libbinder \
-                          libmedia \
-                          libserviceutility
+                          libmedia
 LOCAL_CPPFLAGS=-DANDROID_MAJOR=$(ANDROID_MAJOR) -DANDROID_MINOR=$(ANDROID_MINOR) -DANDROID_MICRO=$(ANDROID_MICRO)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libaudioflingerglue
