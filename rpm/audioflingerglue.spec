@@ -58,8 +58,8 @@ exit -1
 pwd
 ls
 ls  ../../droid-src/
-cp ../../droid-src/%SOURCE0 .
-tar -xvf %SOURCE0
+cp ../../droid-src/%{name}-%{version}.tgz .
+tar -xvf %{name}-%{version}.tgz
 
 %install
 
