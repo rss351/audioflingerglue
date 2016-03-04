@@ -57,9 +57,8 @@ exit -1
 # has been placed in $MER_ROOT/devel/droid-src
 pwd
 ls
-ls  ../../../droid-src/
-cp ../../../droid-src/%SOURCE0 .
-
+ls  ../../droid-src/
+cp ../../droid-src/%SOURCE0 .
 tar -xvf %SOURCE0
 
 %install
