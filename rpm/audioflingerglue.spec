@@ -47,14 +47,19 @@ exit -1
 #mv audioflingerglue* audioflingerglue
 #popd
 
-# hack: assume that the local directory is $MER_ROOT/devel/mer-hybris/$PKG
-# and that the SOURCE0 tar file (created in the ha-sdk) 
-# has been placed in $MER_ROOT/devel/droid-src
-cp ../../droid-src/%SOURCE0 .
-
 
 %build
 #droid-make -j4 libaudioflingerglue miniafservice
+
+
+# hack: assume that the local directory is $MER_ROOT/devel/mer-hybris/$PKG
+# and that the SOURCE0 tar file (created in the ha-sdk) 
+# has been placed in $MER_ROOT/devel/droid-src
+pwd
+ls
+ls  ../../../droid-src/
+cp ../../../droid-src/%SOURCE0 .
+
 tar -xvf %SOURCE0
 
 %install
